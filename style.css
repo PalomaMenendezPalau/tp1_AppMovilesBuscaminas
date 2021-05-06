@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: "Chicle", sans-serif;
+}
+
+body {
+  background-image: url(images/background.jpg);
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  flex-direction: column;
+  color: antiquewhite;
+}
+
+.subtext {
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+
+/*armado el tablero */
+.grid {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: darkolivegreen;
+  margin-bottom: 20px;
+}
+/*cuadraditos de mi tablero */
+.grid div {
+  height: 50px;
+  width: 50px;
+}
+
+.mines {
+  background-color: brown;
+}
+
+.checked {
+  background-color: rgb(168, 166, 34);
+  font-size: 1rem;
+  color: black;
+  align-items: center;
+}
