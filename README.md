@@ -16,3 +16,5 @@ es una cajita vacia en ese caso tengo que mostrar todas las de al lado. pero las
 la 19 en el array es un campo que esta pegado pero en mi grid no entonces tuve que hacer las validaciones para que a este no se sumen ni los numeros de bombas cercanas 
 ni que si esta era vacia se visualice. 
 
+ACLARO POR LAS DUDAS -> las bombas se ven en rojo para poder identificar cuando voy probando el juego. 
+
