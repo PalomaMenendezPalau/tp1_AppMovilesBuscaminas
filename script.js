@@ -113,10 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
       var total = box.getAttribute("data");
       if (total != 0) {
         box.classList.add("checked");
-        if (total == 1) box.classList.add("one");
-        if (total == 2) box.classList.add("two");
-        if (total == 3) box.classList.add("three");
-        if (total == 4) box.classList.add("four");
         box.innerHTML = total;
         return;
       }
@@ -129,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("BOOM! Perdiste!");
     isGameOver = true;
 
-    //muestro todas las bombas.
+    //muestro todas las bombas si toco alguna.
     boxes.forEach((box) => {
       if (box.classList.contains("mines")) {
         box.innerHTML = "💣";
@@ -151,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-
+  // funcion para mostrarme todas las cajitas si toco alguna que no este con numero
   function checkBox(box, currentId) {
     const leftEdge = currentId % width === 0;
     const rightEdge = currentId % width === width - 1;
